@@ -112,7 +112,7 @@ public interface ThreadLocalAccessor<V> {
      * @since 1.0.3
      */
     default void restore() {
-        setValue();
+
     }
 
 }

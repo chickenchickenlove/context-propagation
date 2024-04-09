@@ -108,7 +108,7 @@ final class DefaultContextSnapshot extends HashMap<Object, Object> implements Co
             @Nullable Map<Object, Object> previousValues) {
         previousValues = (previousValues != null ? previousValues : new HashMap<>());
         previousValues.put(key, accessor.getValue());
-        accessor.setValue();
+        accessor.restore();
         return previousValues;
     }
 
